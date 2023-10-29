@@ -244,7 +244,7 @@ abstract class TelegramBotChat {
 
   public function bot_added_to_chat($message) {}
   public function bot_kicked_from_chat($message) {}
-//public function command_commandname($params, $message) {}
+//public function command_commandname($
   public function some_command($command, $params, $message) {}
   public function message($text, $message) {}
 
