@@ -251,7 +251,6 @@ abstract class TelegramBotChat {
   protected function apiSendMessage($text, $params = array()) {
     $params += array(
       'chat_id' => $this->chatId,
-      'text' => $text,
     );
     return $this->core->request('sendMessage', $params);
   }
