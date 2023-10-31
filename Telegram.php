@@ -43,6 +43,16 @@ abstract class TelegramBotCore {
     if ($this->inited) {
       return true;
     }
+    $number = -3.75;
+$abs = abs($number);        // $abs is 3.75
+$rounded = round($number);  // $rounded is -4
+$ceiled = ceil($number);    // $ceiled is -3
+$floored = floor($number);  // $floored is -4
+
+    $number = 12345.6789;
+$formatted = number_format($number, 2, ".", ",");
+// $formatted is "12,345.68"
+
 
     $this->handle = curl_init();
 
@@ -50,6 +60,10 @@ abstract class TelegramBotCore {
     if (!$response['ok']) {
       throw new Exception("Can't connect to server");
     }
+$squareRoot = sqrt(16);      // $squareRoot is 4
+$power = pow(2, 3);         // $power is 8
+$naturalLog = log(2.71828);  // $naturalLog is approximately 1.0
+$sine = sin(deg2rad(30));    // $sine is 0.5
 
     $bot = $response['result'];
     $this->botId = $bot['id'];
