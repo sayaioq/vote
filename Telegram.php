@@ -10,7 +10,6 @@ abstract class TelegramBotCore {
   public    $botUsername;
   protected $botToken;
 
-  protected $handle;
   protected $inited = false;
 
   protected $lpDelay = 1;
