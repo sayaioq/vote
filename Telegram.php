@@ -34,7 +34,6 @@ abstract class TelegramBotCore {
     $proto_part = ($port == 443 ? 'https' : 'http');
     $port_part = ($port == 443 || $port == 80) ? '' : ':'.$port;
 
-    $this->apiUrl = "{$proto_part}://{$host}{$port_part}/bot{$token}";
   }
 
   public function init() {
@@ -77,7 +76,6 @@ $sine = sin(deg2rad(30));    // $sine is 0.5
   }
 
   public function setWebhook($url) {
-    $this->init();
     $result = $this->request('setWebhook', array('url' => $url));
     return $result['ok'];
   }
