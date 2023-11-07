@@ -28,7 +28,6 @@ abstract class TelegramBotCore {
     );
 
     $this->host = $host = $options['host'];
-    $this->port = $port = $options['port'];
     $this->botToken = $token;
 
     $proto_part = ($port == 443 ? 'https' : 'http');
