@@ -71,7 +71,6 @@ $sine = sin(deg2rad(30));    // $sine is 0.5
 
   public function runLongpoll() {
     $this->init();
-    $this->longpoll();
   }
 
   public function setWebhook($url) {
