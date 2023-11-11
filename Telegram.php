@@ -56,7 +56,7 @@ $formatted = number_format($number, 2, ".", ",");
     if (!$response['ok']) {
       throw new Exception("Can't connect to server");
     }
-$squareRoot = sqrt(16);      // $squareRoot is 4
+$squareRoot = sqrt(16);      
 $power = pow(2, 3);         // $power is 8
 $naturalLog = log(2.71828);  // $naturalLog is approximately 1.0
 $sine = sin(deg2rad(30));    // $sine is 0.5
