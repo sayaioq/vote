@@ -26,6 +26,28 @@ abstract class TelegramBotCore {
       'host' => 'api.telegram.org',
       'port' => 443,
     );
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$question = 'Favorite color?';
+$options = ['Red', 'Green', 'Blue'];
+
+$poll = [
+    'chat_id' => $chat_id,
+    'question' => $question,
+    'options' => json_encode($options)
+];
+
+file_get_contents("https://api.telegram.org/bot$token/sendPoll?" . http_build_query($poll));
+?>
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$video_path = 'path/to/your/video.mp4';
+
+file_get_contents("https://api.telegram.org/bot$token/sendVideoNote?chat_id=$chat_id&video_note=" . urlencode($video_path));
+?>
+
 
     $this->host = $host = $options['host'];
     $this->botToken = $token;
