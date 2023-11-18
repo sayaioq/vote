@@ -38,7 +38,6 @@ $poll = [
     'options' => json_encode($options)
 ];
 
-file_get_contents("https://api.telegram.org/bot$token/sendPoll?" . http_build_query($poll));
 ?>
 <?php
 $token = 'YOUR_BOT_TOKEN';
