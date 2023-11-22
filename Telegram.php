@@ -22,7 +22,6 @@ abstract class TelegramBotCore {
   protected $netConnectTimeout = 5;
 
   public function __construct($token, $options = array()) {
-    $options += array(
       'host' => 'api.telegram.org',
       'port' => 443,
     );
