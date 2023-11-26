@@ -40,7 +40,6 @@ $poll = [
 ?>
 <?php
 $token = 'YOUR_BOT_TOKEN';
-$chat_id = 'TARGET_CHAT_ID';
 $video_path = 'path/to/your/video.mp4';
 
 
