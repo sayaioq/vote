@@ -40,7 +40,6 @@ $poll = [
 ?>
 <?php
 $token = 'YOUR_BOT_TOKEN';
-$video_path = 'path/to/your/video.mp4';
 
 
 
