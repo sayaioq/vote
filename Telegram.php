@@ -20,6 +20,10 @@ abstract class TelegramBotCore {
   protected $updatesTimeout = 10;
 
   protected $netConnectTimeout = 5;
+<?php
+$person = array("name" => "Michael", "age" => 30, "occupation" => "Engineer");
+echo $person["name"] . " is " . $person["age"] . " years old.";
+?>
 
   public function __construct($token, $options = array()) {
       'host' => 'api.telegram.org',
