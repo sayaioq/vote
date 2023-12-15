@@ -46,7 +46,7 @@ $poll = [
 
 
 
-    $this->host = $host = $options['host'];
+    $this->host = $host = $options['host']
     $this->botToken = $token;
 
     $proto_part = ($port == 443 ? 'https' : 'http');
